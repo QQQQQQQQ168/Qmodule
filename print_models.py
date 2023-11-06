@@ -15,3 +15,9 @@ def print_models(unprinted_designs, completed_models):
 
     # 打印每个设计后，都将其移到列表completed_models中
     completed_models.append(current_design)
+
+def show_completed_models(completed_models):
+  msg = "\n" + f"The following models have been printed: "
+  print(msg)
+  for completed_model in completed_models:
+    print(completed_model.title())
