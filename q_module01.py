@@ -40,7 +40,7 @@ class Dog():
     self.age = age
 
   def introduce_dog(self):
-    msg_name = f"My dog's name is {self.name}." 
+    msg_name = f"My dog's name is {self.name.title()}." 
     msg_age = f"My dog is {self.age} years old." + "\n"
     print(msg_name)
     print(msg_age)
