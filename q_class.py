@@ -42,3 +42,7 @@ class Car():
   def read_odometer(self):
     msg_odometer = f"This car has {self.odometer_reading} miles on it."
     print(msg_odometer)
+
+ # 将里程表读数设置为指定的值
+  def update_odometer(self, mileage):
+    self.odometer_reading = mileage
