@@ -40,7 +40,7 @@ class Car():
 
   # 打印一条指出汽车里程的消息
   def read_odometer(self):
-    msg_odometer = f"This car has {self.odometer_reading} miles on it."
+    msg_odometer = f"This car has {self.odometer_reading} kilometers on it."
     print(msg_odometer)
 
  # 将里程表读数设置为指定的值，禁止将里程表读数往回调
