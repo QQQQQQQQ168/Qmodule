@@ -21,14 +21,24 @@ class Dog():
 ##########
 
 class Car():
-
-  # 初始化描述汽车的属性
+  
+  # 初始化描述汽车的属性 make, model, year，odometer_reading的属性，其初始值总是为0。
   def __init__(self, make, model, year):
     self.make = make
     self.model = model
     self.year = year
-
+    self.odometer_reading = 0
+  
   # 返回整洁的描述性信息
   def get_descriptive_name(self):
     long_name = f"{self.year} {self.make} {self.model}"
     return long_name.title()
+
+  def show_info(self):
+    long_name = f"{self.year} {self.make.title()} {self.model.title()}"
+    print(long_name)
+
+  # 打印一条指出汽车里程的消息
+  def read_odometer(self):
+    msg_odometer = f"This car has {self.odometer_reading} miles on it."
+    print(msg_odometer)
