@@ -17,3 +17,18 @@ class Dog():
   def roll_over(self):
     msg_roll = f"{self.name.title()} rolled over!"
     print(msg_roll)
+
+##########
+
+class Car():
+
+  # 初始化描述汽车的属性
+  def __init__(self, make, model, year):
+    self.make = make
+    self.model = model
+    self.year = year
+
+  # 返回整洁的描述性信息
+  def get_descriptive_name(self):
+    long_name = f"{self.year} {self.make} {self.model}"
+    return long_name.title()
