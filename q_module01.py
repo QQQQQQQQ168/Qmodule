@@ -32,3 +32,23 @@ def show_completed_models(completed_models):
   for completed_model in completed_models:
     print(completed_model.title())
 
+
+class Dog():
+
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def introduce_dog(self):
+    msg_name = f"My dog's name is {self.name}." 
+    msg_age = f"My dog is {self.age} years old." + "\n"
+    print(msg_name)
+    print(msg_age)
+
+  def sit(self):
+    msg_sit = self.name.title() + f" is now sitting."
+    print(msg_sit)
+
+  def roll_over(self):
+    msg_roll = self.name.title() + f" rolled over!"
+    print(msg_roll)
