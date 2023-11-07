@@ -43,6 +43,9 @@ class Car():
     msg_odometer = f"This car has {self.odometer_reading} miles on it."
     print(msg_odometer)
 
- # 将里程表读数设置为指定的值
+ # 将里程表读数设置为指定的值，禁止将里程表读数往回调
   def update_odometer(self, mileage):
-    self.odometer_reading = mileage
+    if mileage >= self.odometer_reading:
+      self.odometer_reading = mileage
+    else:
+      print("You CANNOT roll back an odometer!")
