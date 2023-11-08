@@ -18,7 +18,9 @@ class Dog():
     msg_roll = f"{self.name.title()} rolled over!"
     print(msg_roll)
 
+
 ##########
+
 
 class Car():
   
@@ -58,4 +60,7 @@ class Car():
 ##########
 
 
-
+class ElectriCar(Car):
+  def __init__(self, make, model, year):
+    # 初始化父类的属性
+    super().__init__(make, model, year)
