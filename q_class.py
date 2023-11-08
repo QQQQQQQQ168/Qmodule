@@ -49,3 +49,7 @@ class Car():
       self.odometer_reading = mileage
     else:
       print("You CANNOT roll back an odometer!")
+
+# 将里程表读数增加指定的量
+  def increment_odometer(self, km):
+    self.odometer_reading = self.odometer_reading + km
