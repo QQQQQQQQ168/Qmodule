@@ -66,7 +66,27 @@ class Car():
 ##########
 
 
+class Battery():
+  def __init__(self, battery_size=70):
+    self.battery_size = battery_size
+      
+  def show_battery(self):
+    msg = f"This car has a {self.battery_size} -kWh battery."
+    print(msg)
 
+  def get_range(self):
+    """
+    电瓶的容量为70kWh，它就将续航里程设置为240英里；
+    如果容量为85kWh，就将续航里程设置为270英里
+    """
+    if self.battery_size == 70:
+      range = 240
+    elif self.battery_size == 85:
+      range = 270
+
+    msg = f"This car can go approximately {range}"
+    msg += f" miles on a full change."
+    print(msg)
 
 ##########
 
