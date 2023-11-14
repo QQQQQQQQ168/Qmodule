@@ -37,8 +37,8 @@ class Car():
     return long_name.title()
 
   def show_info(self):
-    long_name = f"{self.year} {self.make.title()} {self.model.title()}"
-    print(long_name)
+    long_name = f"{self.year} {self.make} {self.model}"
+    print(long_name.title())
 
   # 打印一条指出汽车里程的消息
   def read_odometer(self):
