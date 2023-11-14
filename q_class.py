@@ -77,3 +77,9 @@ class ElectriCar(Car):
  def describe_battery(self):
     msg_battery = f"This car has a {self.battery_size} -kWh battery."
     print(msg_battery)
+
+  # 电动汽车没有油箱
+  def fill_gas_tank(self):
+    msg = f"This car dosen't need a gas tank!"
+    print(msg)
+
