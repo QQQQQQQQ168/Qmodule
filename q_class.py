@@ -18,6 +18,12 @@ class Dog():
     msg_roll = f"{self.name.title()} rolled over!"
     print(msg_roll)
 
+  # 汽车有油箱
+  def fill_gas_tank(self):
+    msg = f"This car has a gas tank."
+    print(msg)
+
+
 
 ##########
 
