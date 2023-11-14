@@ -67,3 +67,6 @@ class ElectriCar(Car):
     # 添加了新属性self.battery_size，并设置其初始值（如70）
     self.battery_size = 70
 
+  def describe_battery(self):
+    msg_battery = f"This car has a {self.battery_size} -kWh battery."
+    print(msg_battery)
