@@ -94,6 +94,11 @@ class Battery():
 class Battery():
   def __init__(self, battery_size=70):
     self.battery_size = battery_size
+
+   # 添加了一个名为describe_battery()的方法，它打印有关电瓶的信息  
+  def describe_battery(self):
+    msg_battery = f"This car has a {self.battery_size} -kWh battery."
+    print(msg_battery)
   
   def show_battery(self):
     msg = f"This car has a {self.battery_size} -kWh battery."
@@ -126,10 +131,7 @@ class ElectriCar(Car):
     # 们添加了一个名为self.battery的属性
     self.battery = Battery()
     
- # 添加了一个名为describe_battery()的方法，它打印有关电瓶的信息  
- def describe_battery(self):
-    msg_battery = f"This car has a {self.battery_size} -kWh battery."
-    print(msg_battery)
+
 
   # 电动汽车没有油箱
   def fill_gas_tank(self):
