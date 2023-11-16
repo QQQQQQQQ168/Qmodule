@@ -122,7 +122,9 @@ class ElectriCar(Car):
     # 初始化父类的属性
     super().__init__(make, model, year)
     # 添加了新属性self.battery_size，并设置其初始值（如70）
-    self.battery_size = 70
+    # self.battery_size = 70
+    # 们添加了一个名为self.battery的属性
+    self.battery = Battery()
     
  # 添加了一个名为describe_battery()的方法，它打印有关电瓶的信息  
  def describe_battery(self):
