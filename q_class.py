@@ -131,8 +131,6 @@ class ElectriCar(Car):
     # 们添加了一个名为self.battery的属性
     self.battery = Battery()
     
-
-
   # 电动汽车没有油箱
   def fill_gas_tank(self):
     msg = f"This car dosen't need a gas tank!"
